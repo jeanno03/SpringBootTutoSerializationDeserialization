@@ -2,6 +2,8 @@ package springboot.tuto.service;
 
 import java.io.IOException;
 
+import org.wiztools.xsdgen.ParseException;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 public interface IEntityMethods {
@@ -13,4 +15,12 @@ public interface IEntityMethods {
 	public void deserializeSimpleBeanFromXmlStringDistinctProperty() throws IOException;
 	public void serializeSimpleBeanDistinctPropertyToXmlFile() throws IOException;
 	
+	public void parseXmlToXsUsingXsdGen() throws Exception;
+	
+	public void xmlToXsdStringUsingXsdGen() throws Exception;
+	public void xmlToXsdFormatStringUsingXsdGen()throws IOException, ParseException;
+	public void generateXsdUsingXsdGen() throws Exception;
+	
+	public void createRSAXml() throws Exception;
+
 }
